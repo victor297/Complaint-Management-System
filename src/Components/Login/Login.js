@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import "./Login.css";
 import { useAuth } from "../Contexts/AuthContext";
 import { auth } from "../Firebase/Config";
@@ -107,6 +107,7 @@ export default function Login() {
                       >
                         Login
                       </button>
+                          <Link to="/signup"> Not Registered? Sign Up</Link>
                     </div>
                   </div>
                 </div>
