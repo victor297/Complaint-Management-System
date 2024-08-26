@@ -107,7 +107,8 @@ export default function Login() {
                       >
                         Login
                       </button>
-                          <Link to="/signup"> Not Registered? Sign Up</Link>
+                          <div>
+                          <Link to="/signup"> Not Registered? Sign Up</Link> </div>
                     </div>
                   </div>
                 </div>
