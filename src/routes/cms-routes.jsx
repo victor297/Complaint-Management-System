@@ -12,9 +12,12 @@ export default function CMSRoutes() {
   if (!currentUser) {
     return (
       <Routes>
-        <Route exact path="*" element={<Navigate to="/login" />} />
+{/*         <Route exact path="*" element={<Navigate to="/login" />} />
         <Route exact path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
+        <Route path="/signup" element={<SignUp />} /> */}
+        <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="*" element={<Navigate to="/login" />} />
       </Routes>
     );
   }
