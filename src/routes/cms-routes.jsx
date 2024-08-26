@@ -1,6 +1,8 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import DashBoard from "../Components/Complain-Page/DashBoard";
 import Login from "../Components/Login/Login";
+import SignUp from "../Components/SignUp/SignUp";
+
 import CreateComplainPage from "../Components/Create-Complain-Page/CreateComplainPage";
 import { useAuth } from "../Components/Contexts/AuthContext";
 
@@ -12,6 +14,7 @@ export default function CMSRoutes() {
       <Routes>
         <Route exact path="*" element={<Navigate to="/login" />} />
         <Route exact path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
     );
   }
