@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import DashBoard from "../Components/Complain-Page/DashBoard";
 import Login from "../Components/Login/Login";
-import SignUp from "../Components/SignUp/SignUp";
+import SignUp from "../Components/signup/SignUp";
 
 import CreateComplainPage from "../Components/Create-Complain-Page/CreateComplainPage";
 import { useAuth } from "../Components/Contexts/AuthContext";
