@@ -1,6 +1,7 @@
 import React from "react";
 import { updateDoc, doc } from "firebase/firestore"; 
-import { firestoreDb,auth } from "../Components/Firebase/Config";
+import { firestoreDb } from "../Components/Firebase/Config";
+import { useAuth } from "../Contexts/AuthContext";
 
 
 export default function ComplainCard({
@@ -13,8 +14,7 @@ export default function ComplainCard({
   room,
   createdAt,
 }) {
-  const email = auth.currentUser.email;
-
+ const {currentUser: {email}} = useAuth();
   const isAdmin = email === "davidvictor297@gmail.com"; // Check if the current user is the admin
 
   // Function to update the status to "Closed"
