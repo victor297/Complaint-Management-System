@@ -35,8 +35,8 @@ export default function ComplainCard({
       <div className="card-body">
         <p>Description: {description}</p>
         <div className="card-footer">
-          <div>Hostel: {hostel}</div>
-          <div>Room: {room}</div>
+          <div>Matric No.: {hostel}</div>
+          <div>Dept/Faculty: {room}</div>
           <div>Status: {status}</div>
           <div>Created At: {createdAt}</div>
           <div>
