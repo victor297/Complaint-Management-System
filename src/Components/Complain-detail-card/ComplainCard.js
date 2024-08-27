@@ -30,6 +30,7 @@ export default function ComplainCard({
     <div className="card" style={{ color: "#000000" }}>
       <div className="card-header">
         <h2>{category}</h2>
+  <p>{id}</p>
       </div>
       <div className="card-body">
         <p>Description: {description}</p>
