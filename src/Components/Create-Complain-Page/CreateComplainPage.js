@@ -42,19 +42,13 @@ export default function CreateComplainPage() {
 
   return (
     <>
-      <section className="text-area">
-        <div className="container my-5 py-5 text-dark">
-          <div className="row d-flex justify-content-center">
-            <div className="col-md-10 col-lg-8 col-xl-6">
+
               
                 <div className="w-100">
                   <h2>Create Your Complain </h2>
                 </div>
              
-            </div>
-          </div>
-        </div>
-      </section>
+           
       <div className="multiple-cards">
         <div className="create-card">
 
