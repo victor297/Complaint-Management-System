@@ -18,6 +18,29 @@ export async function createComplain(complain) {
 //     });
 //     return list;
 //   }
+// export async function listComplain(email) {
+//     let _query;
+
+//     // Check if the user is the admin
+//     if (email === "davidvictor297@gmail.com") {
+//         // Admin can view all complaints, so no filter is applied
+//         _query = query(collection(firestoreDb, 'complains'));
+//     } else {
+//         // Non-admin users can only view their own complaints
+//         _query = query(
+//           collection(firestoreDb, 'complains'),
+//           where('createdBy', '==', email)
+//         );
+//     }
+
+//     const querySnapshot = await getDocs(_query);
+
+//     const list = [];
+//     querySnapshot.forEach((doc) => {
+//         list.push(doc.data());
+//     });
+//     return list;
+// }
 export async function listComplain(email) {
     let _query;
 
@@ -37,7 +60,10 @@ export async function listComplain(email) {
 
     const list = [];
     querySnapshot.forEach((doc) => {
-        list.push(doc.data());
+        list.push({
+            id: doc.id,       // Include the document ID
+            ...doc.data()      // Spread the document data
+        });
     });
     return list;
 }
