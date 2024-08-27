@@ -17,6 +17,7 @@ export default function DashBoard() {
   }
   useEffect(() => {
     listComplain(email).then((res) => setComplainList(res))
+    console.log("complain",complainList)
   }, [email])
 
   return (
