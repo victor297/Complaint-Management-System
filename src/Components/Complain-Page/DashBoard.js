@@ -16,8 +16,7 @@ export default function DashBoard() {
     navigate(`/${category}/create-complain`);
   }
   useEffect(() => {
-    listComplain(email).then((res) => setComplainList(res))
-    console.log("complain",complainList)
+    listComplain(email).then((res) => {setComplainList(res); console.log("complain",res)})
   }, [email])
 
   return (
