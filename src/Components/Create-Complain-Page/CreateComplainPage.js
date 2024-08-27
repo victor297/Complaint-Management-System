@@ -66,7 +66,7 @@ export default function CreateComplainPage() {
             className="form-control"
             id="form4Example"
             value={hostel}
-            placeholder="Enter your Hostel Name"
+            placeholder="Enter your Matric number"
             onChange={handleHostelChange}
           ></textarea>
 
@@ -74,7 +74,7 @@ export default function CreateComplainPage() {
             className="form-control"
             id="form4Example"
             value={room}
-            placeholder="Enter your room No."
+            placeholder="college/department"
             onChange={handleRoomChange}
           ></textarea>
 
