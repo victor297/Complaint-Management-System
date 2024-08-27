@@ -40,7 +40,7 @@ export default function DashBoard() {
         <div style={{ display: "flex", gap: "20px",
     flexWrap: "wrap",
     justifyContent: "space-between"}}>
-        {complainList?.map((complain) => <ComplainCard {...complain} />)}
+        {complainList?.map((complain) => <ComplainCard id={complain.id} {...complain} />)}
         </div>
       </div>
     </>
