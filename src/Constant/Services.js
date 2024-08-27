@@ -1,32 +1,28 @@
 export const Services = {
-  carpenter: {
+  Welfare: {
     image: "carpenter.png",
-    name: "Carpenter",
+    name: "Welfare",
   },
 
-  cleaning: {
+  Teachingprovisionandfacilities: {
     image: "cleaning-staff.png",
-    name: "Cleaning",
+    name: "Teaching provision and facilities",
   },
-  plumber: {
+  Schoolportal: {
     image: "plumber.png",
-    name: "plumber",
+    name: "School portal",
   },
-  electrician: {
+  electricity: {
     image: "electrician.png",
     name: "Electricity",
   },
-  provider: {
+  result: {
     image: "provider.png",
-    name: "WIFI",
+    name: "Inaccurate result",
   },
-  painter: {
+  Accomodations: {
     image: "painter.png",
-    name: "Painter",
-  },
-  treadmill: {
-    image: "treadmill.png",
-    name: "Gym",
+    name: "Accomodations",
   },
   customer: {
     image: "customer-service.png",
