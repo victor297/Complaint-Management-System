@@ -1,6 +1,6 @@
 import React from "react";
 import { updateDoc, doc } from "firebase/firestore"; 
-import { firestoreDb } from "../Components/Firebase/Config";
+import { firestoreDb } from "../Firebase/Config";
 import { useAuth } from "../Contexts/AuthContext";
 
 
