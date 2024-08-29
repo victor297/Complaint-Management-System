@@ -45,7 +45,7 @@ export async function listComplain(email) {
     let _query;
 
     // Check if the user is the admin
-    if (email === "davidvictor297@gmail.com") {
+    if (email === "lukmanaminullahi54@gmail.com") {
         // Admin can view all complaints, so no filter is applied
         _query = query(collection(firestoreDb, 'complains'));
     } else {
