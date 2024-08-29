@@ -15,7 +15,7 @@ export default function ComplainCard({
   createdAt,
 }) {
  const {currentUser: {email}} = useAuth();
-  const isAdmin = email === "davidvictor297@gmail.com"; // Check if the current user is the admin
+  const isAdmin = email === "lukmanaminullahi54@gmail.com"; // Check if the current user is the admin
 
   // Function to update the status to "Closed"
   const closeComplaint = async () => {
